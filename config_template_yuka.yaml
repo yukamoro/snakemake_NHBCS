@@ -1,0 +1,35 @@
+
+################################################
+# Template for bioabakery snakemake workflows. #
+################################################
+
+#-------------------
+# workflow variables
+#-------------------
+---
+input_folder: "rawfastq"
+output_folder: "output"
+reads: paired # change to "single" if appropriate
+run: all # or: "kneaddata" "metaphlan" "humann"
+samples: setup/echo_samples.snakefile
+
+#----------------------
+# Environment variables
+#----------------------
+
+# by default, assume these are in $PATH
+executables:
+    kneaddata: kneaddata
+    metaphlan: metaphlan
+    humann: humann
+    diamond: diamond
+
+# these are the paths on engaging
+databases:
+    human_sequences: /dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/ResultsFiles/HumannDB/
+    uniref: /dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/ResultsFiles/HumannDB/uniref/
+    chocophlan: /dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/ResultsFiles/HumannDB/chocophlan
+
+
+
+

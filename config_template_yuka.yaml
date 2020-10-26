@@ -11,7 +11,7 @@ input_folder: "/dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/SourceFiles/
 output_folder: "/dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/ResultsFiles/Humann3_output"
 reads: paired # change to "single" if appropriate
 run: all # or: "kneaddata" "metaphlan" "humann"
-samples: setup/echo_samples.snakefile #??
+samples: setup/yuka_samples.snakefile #??
 
 #----------------------
 # Environment variables

@@ -3,7 +3,7 @@ __default__:
     ppn: 1 # for -n arg
     nodes: 1 # for -N arg, makes sure all processors are on same node
     walltime: 00:15:00 # for -t, 15 min
-    #memory: 8000 # --mem, 8 Gb
+    memory: 8000 # --mem, 8 Gb
 
 kneaddata:
     ppn: 8
@@ -19,5 +19,5 @@ metaphlan:
 
 humann:
     ppn: 8
-    #memory: 24000 # 24 Gb
+    memory: 24000 # 24 Gb
     walltime: 12:00:00 # 12 hours

@@ -6,7 +6,7 @@
 #-------------------
 # workflow variables
 #-------------------
----
+
 input_folder: "/dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/SourceFiles/rawfastq"
 output_folder: "/dartfs-hpc/rc/lab/M/MRKepistor7/collab/YukaMoroishi/ResultsFiles/Humann3_output"
 reads: paired # change to "single" if appropriate

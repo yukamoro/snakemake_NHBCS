@@ -1,23 +1,27 @@
 #Code from: https://github.com/Klepac-Ceraj-Lab/snakemake_workflows
 __default__:
-    ppn: 1 # for -n arg
+    ppn: 2 # for -n arg
     nodes: 1 # for -N arg, makes sure all processors are on same node
     walltime: 00:15:00 # for -t, 15 min
-    memory: 8000 # --mem, 8 Gb
+    #memory: 8000 # --mem, 8 Gb
 
 kneaddata:
     ppn: 8
+    nodes: 1 
     walltime: 08:00:00 # 8 hours
 
 kneaddata_gzip:
     ppn: 1
+    nodes: 1 
     walltime: 01:00:00 # 1 hour
 
 metaphlan:
     ppn: 8
+    nodes: 1 
     walltime: 04:00:00 # 4 hours
 
 humann:
     ppn: 8
-    memory: 24000 # 24 Gb
+    nodes: 1 
+    #memory: 24000 # 24 Gb
     walltime: 12:00:00 # 12 hours

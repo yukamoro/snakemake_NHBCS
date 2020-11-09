@@ -1,4 +1,5 @@
 #Code from: https://github.com/Klepac-Ceraj-Lab/snakemake_workflows
+#1ppn = 4GB
 __default__:
     ppn: 2 # for -n arg
     nodes: 1 # for -N arg, makes sure all processors are on same node
